@@ -1,5 +1,11 @@
-#
+#disco
+# To create a string, you have to initalize it even if it's empty.
+# Specfic substrings can be obtains using brackets.
+# the len() function returns the numer of character in the string
+# and is used instead of &&
 
+
+# You can use * symbol to multiply string
 def string_times(str, n):
   return (str * n)
 
@@ -7,7 +13,7 @@ def string_times(str, n):
 # string_times('Hi', 3) → 'HiHiHi'	
 # string_times('Hi', 1) → 'Hi'	
 
-
+# To create a string, you have to initalize it even if it's empty.
 def front_times(str, n):
   new = ""
   if len(str) < 3:
@@ -21,6 +27,7 @@ def front_times(str, n):
 # front_times('Chocolate', 3) → 'ChoChoCho'
 # front_times('Abc', 3) → 'AbcAbcAbc'
 
+# Specfic substrings can be obtains using brackets.
 def string_bits(str):
   index = 0
   new = ""
@@ -33,6 +40,7 @@ def string_bits(str):
 # string_bits('Hi') → 'H'
 # string_bits('Heeololeo') → 'Hello'
   
+# You cannot do ++ on python for some reason.
 def string_splosion(str):
   index = 0
   new = ""
@@ -45,6 +53,7 @@ def string_splosion(str):
 # string_splosion('abc') → 'aababc'
 # string_splosion('ab') → 'aab'
 
+# the len() function returns the numer of character in the string
 def last2(str):
   last = str[len(str)-2:]
   count = 0
@@ -57,6 +66,7 @@ def last2(str):
 # last2('13121311') → 0	
 # last2('1717171') → 2
 
+# integer variables have to be initalized.
 def array_count9(nums):
   count = 0
   for e in nums:
@@ -68,6 +78,7 @@ def array_count9(nums):
 # array_count9([1, 9, 9, 3, 9]) → 3		
 # array_count9([1, 2, 3]) → 0	
 
+# You don't have to write else if the while loop tests all the cases for either True or False
 def array_front9(nums):
   i = 0
   for e in nums:
@@ -81,6 +92,7 @@ def array_front9(nums):
 # array_front9([1, 9, 9]) → True
 
 
+# and is used instead of &&
 def array123(nums):
   i = 0
   for e in range(len(nums)-2):
@@ -92,6 +104,7 @@ def array123(nums):
 # array123([1, 1, 2, 4, 1]) → False	
 # array123([1, 1, 2, 1, 2, 3]) → True	
 
+# range function could be used effective to bound the function
 def string_match(a, b):
   count = 0
   for e in range(len(a)-1):
