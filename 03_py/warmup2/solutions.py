@@ -1,9 +1,10 @@
-# disco
-# To create a string, you have to initalize it even if it's empty.
-# Specfic substrings can be obtains using brackets.
-# the len() function returns the numer of character in the string
-# and is used instead of &&
-
+'''
+disco
+To create a string, you have to initalize it even if it's empty.
+Specfic substrings can be obtains using brackets.
+the len() function returns the numer of character in the string
+and is used instead of &&
+'''
 
 # You can use * symbol to multiply string
 def string_times(str, n):
