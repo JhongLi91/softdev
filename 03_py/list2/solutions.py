@@ -1,7 +1,8 @@
-# disco
-# there are a min and max function in python 
-# % is the modulus symbol that could be used to find reminders
-
+'''
+disco
+there are a min and max function in python 
+% is the modulus symbol that could be used to find reminders
+'''
 
 # % is the modulus symbol that could be used to find reminders
 def count_evens(nums):
