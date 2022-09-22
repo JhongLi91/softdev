@@ -1,3 +1,9 @@
+# disco
+# there are a min and max function in python 
+# % is the modulus symbol that could be used to find reminders
+
+
+# % is the modulus symbol that could be used to find reminders
 def count_evens(nums):
   count = 0
   for e in nums:
@@ -9,6 +15,7 @@ def count_evens(nums):
 # count_evens([2]) → 1
 # count_evens([2, 5, 12]) → 2	
 
+# there are a min and max function in python 
 def big_diff(nums):
   mi = nums[0]
   ma = nums[0]
@@ -23,6 +30,7 @@ def big_diff(nums):
 # big_diff([2, 2]) → 0	
 # big_diff([2]) → 0	
 
+# += sign could be used to add on to the original
 def centered_average(nums):
   mi = nums[0]
   ma = nums[0]
@@ -37,6 +45,7 @@ def centered_average(nums):
 # centered_average([4, 4, 4, 1, 5]) → 4	
 # centered_average([6, 4, 8, 12, 3]) → 6		
 
+# sometimes else is needed, other times it's not
 def sum13(nums):
   if len(nums) == 0:
     return 0
@@ -55,6 +64,7 @@ def sum13(nums):
 # sum13([0]) → 0	
 # sum13([13, 0]) → 0
 
+# A while loop can exist within a if statement within a while loop
 def sum67(nums):
   if len(nums) == 0:
     return 0
@@ -77,6 +87,7 @@ def sum67(nums):
 # sum67([11, 6, 7, 11]) → 22	22	OK	
 # sum67([2, 2, 6, 7, 7]) → 11	11	OK
 
+# and is used instead of &&
 def has22(nums):
   i = 0 
   
