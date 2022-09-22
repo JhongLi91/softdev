@@ -80,10 +80,6 @@ def missing_char(str, n):
   return str[0:n] + str[n+1:] #took substring before index n and the substring after it & combined them together
 '''
 Return true if both or neither are smiling. 
-monkey_trouble(True, True) → True	True	
-monkey_trouble(False, False) → True	True	
-monkey_trouble(True, False) → False	False	
-monkey_trouble(False, True) → False	False	
 '''
 def monkey_trouble(a_smile, b_smile):
   if (a_smile) == (b_smile): #if both are the same (smiling or not smiling) return True
@@ -91,26 +87,29 @@ def monkey_trouble(a_smile, b_smile):
     
   else:
     return False
+print(monkey_trouble(True, True)) # → True
+print(monkey_trouble(False, False)) # → True
+print(monkey_trouble(True, False)) # → False
+print(monkey_trouble(False, True)) # → False
+
 '''
 Given an int n, return True if it is within 10 of 100 or 200.
-near_hundred(93) → True
-near_hundred(90) → True	
-near_hundred(89) → False
-near_hundred(110) → True	
 '''
 
 def near_hundred(n):
   if abs(100-n) <= 10 or abs(200-n) <= 10: #used abs to find the difference b/c it doesn't matter whether it is positive or negative difference 
     return True
   return False
+
+print(near_hundred(93)) # → True
+print(near_hundred(90)) #→ True	
+print(near_hundred(89)) #→ False
+print(near_hundred(110)) # → True	
   
 '''
 Given a string, return a new string where "not " has been added to the front. 
 However, if the string already begins with "not", return the string unchanged.
-not_string('candy') → 'not candy'
-not_string('x') → 'not x'
-not_string('not bad') → 'not bad'
-not_string('bad') → 'not bad'
+
 DISCO: First DISCO of the warmup! You can combine strings just by using the + sign. 
 '''
 
@@ -118,14 +117,14 @@ def not_string(str):
   if str[:3] == "not": #if string began with not, then it would be unchanged. 
     return str
   return "not" + str 
+
+print(not_string('candy')) #→ 'not candy'
+print(not_string('x')) #→ 'not x'
+print(not_string('not bad')) #→ 'not bad'
+print(not_string('bad')) #→ 'not bad'
   
 '''
 Return true if talking = true and hour is before 7 or after 20. 
-parrot_trouble(True, 6) → True
-parrot_trouble(True, 7) → False
-parrot_trouble(False, 6) → False	
-parrot_trouble(True, 21) → True
-parrot_trouble(False, 21) → False	
 '''
 
 def parrot_trouble(talking, hour):
@@ -134,13 +133,16 @@ def parrot_trouble(talking, hour):
     
   else:
     return False
+  
+print(parrot_trouble(True, 6)) # → True
+print(parrot_trouble(True, 7)) #→ False
+print(parrot_trouble(False, 6)) #→ False	
+print(parrot_trouble(True, 21)) #→ True
+print(parrot_trouble(False, 21)) #→ False	
+
 '''
 Given 2 int values, return True if one is negative and one is positive. 
 Except if the parameter "negative" is True, then return True only if both are negative.
-pos_neg(1, -1, False) → True
-pos_neg(-1, 1, False) → True
-pos_neg(-4, -5, True) → True
-pos_neg(-4, -5, False) → False
 '''
 
 def pos_neg(a, b, negative):
@@ -155,17 +157,15 @@ def pos_neg(a, b, negative):
   
   return True
   
+print(pos_neg(1, -1, False)) #→ True
+print(pos_neg(-1, 1, False)) #→ True
+print(pos_neg(-4, -5, True)) #→ True
+print(pos_neg(-4, -5, False)) #→ False
+  
  '''
 The parameter weekday is True if it is a weekday, and the parameter vacation is True if we are on vacation. 
 We sleep in if it is not a weekday or we're on vacation. Return True if we sleep in.
->>> sleep_in(True, False)
-False
->>> sleep_in(False, False)
-True
->>> sleep_in(True, True)
-True
->>> sleep_in(False, True)
-True
+
 '''
 
 def sleep_in(weekday, vacation):
@@ -174,13 +174,14 @@ def sleep_in(weekday, vacation):
     else:
       return False
       
+print(sleep_in(True, False)) #False
+print(sleep_in(False, False)) #True
+print(sleep_in(True, True)) #True
+print(sleep_in(False, True)) #True      
+      
 '''
 Return the sum of the given two ints...
 Unless the two values are the same, then return double their sum.
-sum_double(1, 2) → 3
-sum_double(3, 2) → 5
-sum_double(2, 2) → 8
-sum_double(-1, 0) → -1
 '''
 
 def sum_double(a, b):
@@ -188,3 +189,7 @@ def sum_double(a, b):
     return (a+b)*2  #returned double
     
   return a + b
+print(sum_double(1, 2)) #→ 3
+print(sum_double(3, 2)) #→ 5
+print(sum_double(2, 2)) #→ 8
+print(sum_double(-1, 0)) #→ -1
