@@ -4,6 +4,10 @@ def count_evens(nums):
     if e % 2 == 0:
       count+=1
   return count
+  
+# count_evens([2, 11, 9, 0]) → 2	
+# count_evens([2]) → 1
+# count_evens([2, 5, 12]) → 2	
 
 def big_diff(nums):
   mi = nums[0]
