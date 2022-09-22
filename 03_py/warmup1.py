@@ -1,10 +1,7 @@
 
 '''
 Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.
-diff21(0) → 21	
-diff21(1) → 20	
-diff21(2) → 19	
-diff21(-1) → 22	
+
 DISCO: Learned something cool here. The abs function in Python as it is in Java. 
 abs(a-b) gives you the absolute value of the difference between a-b. Swag. 
 '''
@@ -15,15 +12,17 @@ def diff21(n):
   
   else:
     return abs(21-n) #found absolute difference
+ 
+print(diff21(0)) # → 21	
+print(diff21(1)) # → 20	
+print(diff21(2)) # → 19	
+print(diff21(-1))# → 22	
     
   '''
 Front = first 3 chars of the string
 If the string length is less than 3, the front is whatever is there. 
 Return a new string which is 3 copies of the front.
-front3('Java') → 'JavJavJav'	
-front3('Chocolate') → 'ChoChoCho'
-front3('abc') → 'abcabcabc'	
-front3('abcXYZ') → 'abcabcabc'	
+
 DISCO: You can copy/repeat strings just by using the * sign. 
 '''
 
@@ -33,26 +32,29 @@ def front3(str):
   front = str[0:3] #takes the first 3 chars
   return front * 3 #copies front 3 times
   
+print(front3('Java')) # → 'JavJavJav'	
+print(front3('Chocolate')) # → 'ChoChoCho'
+print(front3('abc')) # → 'abcabcabc'	
+print(front3('abcXYZ')) # → 'abcabcabc'
+  
  '''
 Return a new string where the first and last chars have been exchanged.
-front_back('code') → 'eodc'
-front_back('a') → 'a'
-front_back('ab') → 'ba'
-front_back('abc') → 'cba'
-front_back('') → ''
 '''
 
 def front_back(str):
   if (len(str) <= 1): #if length is less or equal to 1, there is no difference between the first and last chars
     return str        #thus, you would just return the str
   return str[len(str)-1] + str[1:len(str)-1] + str[0:1]
+  
+print(front_back('code')) # → 'eodc'
+print(front_back('a')) # → 'a'
+print(front_back('ab')) #→ 'ba'
+print(front_back('abc')) #→ 'cba'
+print(front_back('')) #→ ''
  
 '''
 Given 2 ints, a and b, return True if one if them is 10 or if their sum is 10.
-makes10(9, 10) → True	
-makes10(9, 9) → False	
-makes10(1, 9) → True	
-makes10(10, 1) → True	
+
 DISCO: Similar to Java, you do not need an else statement to just go directly into the 
 statement if the "if" statement isn't triggered. 
 '''
@@ -61,12 +63,16 @@ def makes10(a, b):
   if a == 10 or b == 10 or b + a == 10: #returned True if one or their sum is 10. 
     return True
   return False
+  
+print(makes10(9, 10)) #→ True	
+print(makes10(9, 9)) #→ False	
+print(makes10(1, 9)) #→ True	
+print(makes10(10, 1)) #→ True	
+
+
 '''
 Return a new string where the char at index n has been removed. 
-missing_char('kitten', 1) → 'ktten'	
-missing_char('kitten', 0) → 'itten'
-missing_char('kitten', 4) → 'kittn'
-missing_char('Hi', 0) → 'i'
+
 DISCO: Very cool discovery here. To get the substring of a string from index n to the end, 
 all you need to do is [n:]. Python automatically assumes that it goes to the last index. 
 '''
