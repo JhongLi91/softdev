@@ -1,29 +1,22 @@
-
-from random import randint
-
 '''
 JeLifish Trio: Jian Hong Li, Verit Li, Erica Li, Nibbles, Hugo, JHL
 Soft Dev
 K04 -- Random Devo from Krewes
 2022-09-27
 time spent: 4 hrs
-
 DISCO: 
 You can get the length of a dictionary through just using the method len(dictionary) on it.  
 You have to import randint from random to use it
-
 QCC: Would it be faster to take all of the lists associated with the keys, make a giant list, and then pick a random value from the lists? 
-
 OPS SUMMARY: 
 If krewes is empty, return ERROR
 Gets a list of the keys in the krewes
 Randomly iterates through all the list of keys to determine whether it contains values or not. If the key is empty, it will remove the key and continue on. If all the keys’ lists are empty, return ERROR. 
-If only one of the keys has a non-empty list, this key is “chosen” and skips skip 4. 
-Chooses a random key 
+When one of the keys is found to have a non-empty list, this key is chosen. 
 Choose a random index from list associated with chosen key
 Return value at the random index of the associated key. 
-
 '''
+from random import randint
 
 krewes1 = {1:["1", "2", "3"], 2:["A", "B", "C"]}
 krewes2 = {
@@ -60,6 +53,3 @@ print(getRandom(krewes2))
 print(getRandom(krewes3))
 print(getRandom(krewes4))
 print(getRandom(krewes5))
-
-
-
