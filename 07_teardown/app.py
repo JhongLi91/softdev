@@ -1,4 +1,4 @@
-# your heading here
+#Jian Hong Li
 
 from flask import Flask
 
@@ -20,9 +20,9 @@ QCC:
 ...
 0. java
 1. In python, '/' continues the next line to the current line
-2. app
-3. '/'
-4. app.run
+2. print to app
+3. "No hablo queso!"
+4. In a local server
 5. java
 
 ...
