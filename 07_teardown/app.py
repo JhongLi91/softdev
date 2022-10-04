@@ -18,12 +18,12 @@ QCC:
 1. What is app
 
 ...
-0. Stack in java?
+0. java
 1. In python, '/' continues the next line to the current line
 2. app
 3. '/'
-4. 
-5. 
+4. app.run
+5. java
 
 ...
 INVESTIGATIVE APPROACH:
