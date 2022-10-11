@@ -2,7 +2,7 @@ TNPG: sadidas; Roster: Joseph Jeon, Jeffery Tang, Jian Hong Li
 SoftDev
 K08
 2022-10-06
-Time Spent: hrs
+Time Spent: 1hrs
 
 QCC:
 * Why does the browser download foo when we go to localhost/static/foo but not when we go to localhost/static/foo.html
