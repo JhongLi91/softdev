@@ -1,21 +1,16 @@
-TNPG: sadidas; Roster: Joseph Jeon, Jeffery Tang, Jian Hong Li
+TNPG: Ballers; Jian Hong Li, Harry Zhu, Shreya Roy
 SoftDev
-K11
-2022-10-14
-Time Spent: .5hrs
-
-Predictions:
-* print statements will show up in the browser
-* return statements will show up in the terminal
-* request.args['username'] would work if there an username established
+K12
+2022-10-17
+Time Spent: 2hrs
 
 QCC:
-* What does the "*" symbol mean in HTML?
-* What do print(app) do?
-* What is the ImmutableMultiDict([('username', 'srjntr,umf'), ('sub1', 'Submit Query')])?
-* Where does the "Submit Query" come from since it's not in the html file or python file?
+* How do you store data in servers?
+* How do you access or change GET and POST?
+* Going to be honest here: we looked at other team's solution
+but still don't understand what's going on
+
 
 Disco:
-* When html runs <form action="/auth"> (when we click Submit Query) it runs the route in the python file
-* When submitting a username, it shows up in the link
-* Uncommenting line 41 creates an error, "BadRequestKeyError"
+* Returning request_method can give you the method
+* render_template("file.html") can be used to open the file in the browser
