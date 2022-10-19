@@ -42,7 +42,7 @@ def disp_loginpage():
     print("***DIAG: request.headers ***")
     print(request.headers)
     if request.method == "GET":
-        return render_template( 'login.html', request_method = "GET")
+        return render_template( 'index.html', request_method = "GET")
     elif request.method == "POST":
         username = request.form.get("username")
         return render_template("response.html", username = username, request_method = "POST")
