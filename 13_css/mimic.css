@@ -1,0 +1,40 @@
+body {
+  background-color: gray;
+}
+
+h1 {
+  background-color: #BEBEBE;
+  color: white;
+  margin: 0;
+  text-align: center;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  background-color: #777777
+}
+
+.left {
+  min-width: 170px;
+}
+
+.navbar{
+  display: flex;
+}
+
+.heading,
+.nav-foo{
+  font-weight: 700px;
+}
+
+.nav-foo {
+  font-size: 24px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: rbg(200,200,200);
+}
