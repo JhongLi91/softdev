@@ -15,5 +15,5 @@ Disco:
  * .help can give the methods to the Sqlite program
  * sqlite3 courses.csv opens the file with sqlite
  * ...> CREATE TABLE creates a table
- * You can only create databases in .bd files
+ * stubby.py creates file foo with table roster
  
