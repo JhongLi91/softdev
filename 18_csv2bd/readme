@@ -1,0 +1,17 @@
+
+
+TNPG: Ballers; Jian Hong Li, Harry Zhu, Shreya Roy
+SoftDev
+K18
+2022-10-26
+Time Spent: 1hrs
+
+QCC:
+    * How do you delete a database? We delete databases by deleting the entire file
+	
+Disco:
+
+    * "INSERT INTO rosters VALUES(" + '"' +  row_data + '"'  + "," + mark_data + ");")
+    * row_data has to be a string or else, it will be read as a varible
+    * To how table do SELECT * from rosters
+	
