@@ -1,0 +1,14 @@
+TNPG: Ballers; Jian Hong Li, Harry Zhu, Shreya Roy
+SoftDev
+p00
+2022-10-27
+Time Spent: 1hrs
+
+QCC
+ * Do you have to delete databases after it is used?
+ * Can new pages be automatically created and pushed? How would you do that?
+
+DISCO
+ * The biggest part of the design is on navigability
+ of the wiki. How can each page connect to each other?
+ * Links provides an unique identifer.
