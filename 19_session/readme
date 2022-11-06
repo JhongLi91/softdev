@@ -1,0 +1,16 @@
+TNPG: Ballers; Shreya Roy, Jian Hong Li, Harry Zhu
+SoftDev pd 8
+K19 Sessions
+2022-11-07
+Time Spent: 2.5 hrs
+
+QCC:
+* Do all secret_key have to be unique? What if by chance, one of the generated
+key is not unique?
+
+Disco:
+* app.secret_key= os.urandom(32) creates a random secret key with length 32,
+it is needed to assign cookies. Flask takes care of all the other stuff.
+* session is like a dictionary that stores information like session['username']
+gives the value with the key 'username'
+* Because session is used very much like a dictionary, methods like pop could be request_method
