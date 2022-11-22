@@ -1,0 +1,16 @@
+Kung Pao Chicken: Brian Yang, Jian Hong Li
+SoftDev
+k20 -- RESTful API
+2022 -- 11-- 21
+time spent: .5 hr
+
+
+DISCO:
+
+- .json() to take a request and transform its data into a json
+- Accessing a json is basically like accessing a python dictionary
+- <img src = "" > is for showing images on html
+
+QAF:
+
+- why doesnt request.get() not return a json if the webpage shows json
