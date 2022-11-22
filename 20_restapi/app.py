@@ -1,16 +1,15 @@
-from flask import Flask             #facilitate flask webserving
-from flask import render_template   #facilitate jinja templating
-from flask import request           #facilitate form submission
-from flask import session           #facilitate sessions!
-from flask import redirect
+from flask import Flask
+from flask import render_template
+import urllib.request, json
 
 #______________________
 app = Flask(__name__)    #create Flask object
 
-@app.route("/", methods=['GET'])
+@app.route("/")
 def index():
-    api = request.form.get("url")
-    return render_template("main.html", )
+    key = open("key_nasa.txt").read()
+    url = "https://api.nasa.gov/planetary/apod?api_key=" + key
+    return render_template("main.html", url = url)
 
 
 if __name__ == "__main__": #false if this file imported as module
