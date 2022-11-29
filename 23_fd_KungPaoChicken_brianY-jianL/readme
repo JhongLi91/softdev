@@ -1,0 +1,11 @@
+Kung Pao Chicken: Brian Yang Jian Hong Li
+SoftDev
+K<23> -- Foundation Learning
+2022 - 11 - 29
+time spent:
+
+Disco:
+- <ul></ul> is used to create a default horizontal menu | <li></li> is used to create elements containing links | Adding "align-right," "align-left," and "align-center" in the class name can reorientate the element
+- Adding color to an element or group can be done by creating a class and naming it "primary," "secondary," "success," "warning," and "alert"
+- Not all elements can be affected by the class name. (i.e. You cannot center-align images)
+-
