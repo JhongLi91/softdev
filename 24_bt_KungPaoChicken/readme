@@ -1,0 +1,20 @@
+<!--
+Brain Yang, Jian Hong Li
+SoftDev
+K24 --
+2022-11-30
+time spent: 1hr
+
+-->
+
+Disco
+* The alignment automatically centers
+* <code>  </code> tags creates a code block
+* "col col-8" to change column size
+* <input type="checkbox" class="form-check-input"> to create an actionable form
+
+
+QCC
+* What does the <pre> tag do?
+* what is &lt; and &gt;?
+* Why is the elements in the class not separated by commas but instead by spaces?
