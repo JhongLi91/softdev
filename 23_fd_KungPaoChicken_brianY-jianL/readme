@@ -2,10 +2,18 @@ Kung Pao Chicken: Brian Yang Jian Hong Li
 SoftDev
 K<23> -- Foundation Learning
 2022 - 11 - 29
-time spent:
+time spent: 1hr
 
 Disco:
-- <ul></ul> is used to create a default horizontal menu | <li></li> is used to create elements containing links | Adding "align-right," "align-left," and "align-center" in the class name can reorientate the element
+- <ul class = "menu"></ul> is used to create a default horizontal menu | <li></li> is used to create elements containing links
+- Adding "align-right," "align-left," and "align-center" in the class name can be used aligned the element
+- "float-___" does the same thing but slightly different
+- Different types of list can be created:
+  - <ul></ul> (unordered list) uses <lil> inside
+  - <ol></ol> (ordered list) uses <lil> inside
+  - <dl></dl> (definition list) uses <dt> for the term and <dd> for the list
+- <blockquote> to show quote with <cite> inside the blockquote element to cite the author
 - Adding color to an element or group can be done by creating a class and naming it "primary," "secondary," "success," "warning," and "alert"
-- Not all elements can be affected by the class name. (i.e. You cannot center-align images)
--
+- Not all elements can be affected by the class name. Like how some parameters don't work if they're the wrong type
+- Table element can be applied with hover, stacked, unstriped, and table-scroll
+- Class names applied to button elements can make do different things

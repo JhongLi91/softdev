@@ -1,3 +1,11 @@
+<!--
+Kung Pao Chicken: Brian Yang Jian Hong Li
+SoftDev
+K<23> -- Foundation Learning
+2022 - 11 - 29
+time spent: 1hr
+-->
+
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -10,73 +18,100 @@
     <!-- Compressed JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
 
-
-    <ul class="menu align-left">
+    <ul class="menu align-center">
       <li><a href="#">One</a></li>
       <li><a href="#">Two</a></li>
       <li><a href="#">Three</a></li>
       <li><a href="#">Four</a></li>
     </ul>
 
-    <div class="callout">
+    <blockquote>
+      Those people who think they know everything are a great annoyance to those of us who do.
+      <cite>Isaac Asimov</cite>
+    </blockquote>
+
+    <div class="callout primary">
       <h5>This is a callout.</h5>
       <p>It has an easy to override visual style, and is appropriately subdued.</p>
-        <a href="#">It's dangerous to go alone, take this.</a>
-      </div>
+      <a href="#">It's dangerous to go alone, take this.</a>
+    </div>
 
-    <div class="card" style="width: 300px;">
-      <div class="card-divider">
-        This is a header
+    <div class="card float-center" style="width: 300px;">
+      <div class="card-divider align-center">
+        Kung Pao Chicken
       </div>
-      <img src="assets/img/generic/rectangle-1.jpg">
+      <img src="Kungpaochicken.jpg">
       <div class="card-section">
-        <h4>This is a card.</h4>
-        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <h4>This is chicken.</h4>
+        <p>Very cool chicken </p>
       </div>
     </div>
 
     <br>
 
     <div class = "callout align-center">
-     <p> This is a progress bar </p>
+     <p> This is a progress bar. You can change the progress amount. </p>
      <div class="progress" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuetext="47 percent" aria-valuemax="100">
        <div class="progress-meter" style="width: 47%"></div>
      </div>
    </div>
 
+     <!-- Anchors (links) -->
+  <a href="about.html" class="button">These are buttons</a>
+  <a href="#features" class="button">You click on them and they send you somewhere</a>
 
+  <br>
 
-<ul class="accordion" data-responsive-accordion-tabs="accordion medium-tabs large-accordion">
-  <li class="accordion-item is-active" data-accordion-item>
-    <a href="#" class="accordion-title">Accordion 1</a>
-    <div class="accordion-content" data-tab-content>
-      I would start in the open state, due to using the `is-active` state class.
-    </div>
-  </li>
-  <!-- ... -->
-</ul>
+  <!-- Buttons (actions) -->
+  <button class="submit success button">These buttons do something</button>
+  <button type="button" class="alert button"> They have actions tied to them</button>
 
-<div class="switch">
-  <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
-  <label class="switch-paddle" for="exampleSwitch">
-    <span class="show-for-sr">Download Kittens</span>
-  </label>
-</div>
+  <div class="switch">
+    <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+    <label class="switch-paddle" for="exampleSwitch">
+      <span class="show-for-sr">switch</span>
+    </label>
+  </div>
+  <p> This is a switch </p>
 
+    <table class="hover stack">
+      <thead>
+        <tr>
+          <th width="200">Chicken</th>
+          <th>Table</th>
+          <th width="150">Chicken</th>
+          <th width="150">Chicken</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kung</td>
+          <td>Kung</td>
+          <td>Kung</td>
+          <td>Kung</td>
+        </tr>
+        <tr>
+          <td>Pao</td>
+          <td>Pao</td>
+          <td>Pao</td>
+          <td>Pao</td>
+        </tr>
+      </tbody>
+    </table>
 
-<div class="switch">
-  <input class="switch-input" id="exampleRadioSwitch1" type="radio" checked name="testGroup">
-  <label class="switch-paddle" for="exampleRadioSwitch1">
-    <span class="show-for-sr">Bulbasaur</span>
-  </label>
-</div>
-
-<div class="switch">
-  <input class="switch-input" id="exampleRadioSwitch1" type="radio" checked name="testGroup">
-  <label class="switch-paddle" for="exampleRadioSwitch1">
-    <span class="show-for-sr">Bulbasaur</span>
-  </label>
-</div>
+    <ol>
+      <li>Cheese</li>
+      <li>Chicken</li>
+      <li>Kung
+        <ol>
+          <li>bacon</li>
+          <li>Canadian cheese</li>
+        </ol>
+      </li>
+      <li>Sausage</li>
+      <li>Pao</li>
+      <li>Mushrooms</li>
+    </ol>
 
   </body>
 </html>
