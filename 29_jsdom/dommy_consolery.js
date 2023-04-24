@@ -119,3 +119,31 @@ const myFxn = (param1, param2) => {
   retVal = param1 * param2;
   return retVal;
 };
+
+const myInput = document.getElementById('my-input');
+const myInput2 = document.getElementById('my-input2');
+const myInput3 = document.getElementById('my-input3');
+const myButton = document.getElementById('my-button');
+const myButton2 = document.getElementById('my-button2');
+const myButton3 = document.getElementById('my-button3');
+const content = document.getElementById('FIB');
+const content2 = document.getElementById('FACT');
+const content3 = document.getElementById('GCD');
+
+myButton.addEventListener('click', function(event) { // adjusting the functions to avoid repition
+  const myInputValue = myInput.value;
+
+  content.innerHTML = fib(myInputValue);
+}
+
+myButton2.addEventListener('click', function(event) {
+  const myInputValue = myInput2.value;
+
+  content2.innerHTML = fact(myInputValue);
+}
+
+myButton3.addEventListener('click', function(event) {
+  const myInputArray = myInput3.value.split(" ");
+
+  content3.innerHTML = gcd(myInputArray[0], myInputArray[1]);
+}
