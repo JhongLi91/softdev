@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
 <!--
-     Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
-     SoftDev pd0
-     K28 -- Manipulating the DOM
-     2023-04-05w
+     Jian Hong Li
+     SoftDev pd8
+     K29 -- DOMfoolery++
+     2023-04-20
    --------------------------------------------------
 -->
 
@@ -23,15 +23,13 @@
   <body>
     <h1 id="h" class="blue">Hello World!</h1>
 
-    <div id="div1" class="green">fib</div>
-    <div id="div2">fac</div>
-    <div class="blue">gcd</div>
+    <div id="div1" class="green">This is a div</div>
+    <div id="div2">This is a second div</div>
+    <div class="blue">This is a toid div</div>
 
     <ol id="thelist">
-      <li class="">into 0</li>
-      <li class="green blue">item 1
-        <input type = 
-      </li>
+      <li class="">item 0</li>
+      <li class="green blue">item 1</li>
       <li class="green blue">item 2</li>
       <li class="red green blue">item 3</li>
       <li class="red green blue">item 4</li>
@@ -40,7 +38,16 @@
       <li class="">item 7</li>
     </ol>
 
-    <script src="dommy_consolery.js"></script>
 
+    <input id="my-input" placeholder="Enter arg for fib()" />
+    <button id="my-button"> Display fib(n) </button>
+    <p id = "FIB"></p>
+    <input id="my-input2" placeholder="Enter arg for fact()" />
+    <button id="my-button2"> Display fact(n) </button>
+    <p id = "FACT"></p>
+    <input id="my-input3" placeholder="Enter args separated by a space" />
+    <button id="my-button3"> Display gcd(n,v) </button>
+    <p id = "GCD"></p>
+    <script src="dommy_consolery.js"></script>
   </body>
 </html>
