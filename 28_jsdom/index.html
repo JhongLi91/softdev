@@ -8,6 +8,16 @@
    --------------------------------------------------
 -->
 
+<!DOCTYPE html>
+
+<!--
+     Team Phantom Tollbooth :: Sasha Shifrina, Anna Fang
+     SoftDev pd7
+     K29 -- DOMfoolery++
+     2023-04-20
+   --------------------------------------------------
+-->
+
 <html lang="en">
   <!-- HTML file for exploring JavaScript interactions with the DOM -->
 
@@ -38,7 +48,23 @@
       <li class="">item 7</li>
     </ol>
 
-    <script src="dommy_consolery.js"></script>
+    <!-- Augment given code so that upon loading index.html, the result of at least one call to each of your calculator functions appears on the page. -->
 
+    <!-- <p id="GCD"></p>
+    <p id = "FIB"></p>
+    <p id = "FACT"></p> -->
+    <!-- ^^ old calls from k28 -->
+
+    <!-- buttons and user input space  -->
+    <input id="my-input" placeholder="Enter arg for fib()" />
+    <button id="my-button"> Display fib(n) </button>
+    <p id = "FIB"></p>
+    <input id="my-input2" placeholder="Enter arg for fact()" />
+    <button id="my-button2"> Display fact(n) </button>
+    <p id = "FACT"></p>
+    <input id="my-input3" placeholder="Enter args separated by a space" />
+    <button id="my-button3"> Display gcd(n,v) </button>
+    <p id = "GCD"></p>
+    <script src="dommy_consolery.js"></script>
   </body>
 </html>

@@ -130,20 +130,20 @@ const content = document.getElementById('FIB');
 const content2 = document.getElementById('FACT');
 const content3 = document.getElementById('GCD');
 
-myButton.addEventListener('click', function(event) { // adjusting the functions to avoid repition
+myButton.addEventListener('click', function(event)) { // adjusting the functions to avoid repition
   const myInputValue = myInput.value;
 
   content.innerHTML = fib(myInputValue);
-}
+};
 
-myButton2.addEventListener('click', function(event) {
+myButton2.addEventListener('click', function(event)) {
   const myInputValue = myInput2.value;
 
-  content2.innerHTML = fact(myInputValue);
-}
+  content2.innerHTML = fac(myInputValue);
+};
 
-myButton3.addEventListener('click', function(event) {
+myButton3.addEventListener('click', function(event)) {
   const myInputArray = myInput3.value.split(" ");
 
   content3.innerHTML = gcd(myInputArray[0], myInputArray[1]);
-}
+};
