@@ -35,6 +35,7 @@ var drawCircle = (e) => {
   ctx.arc(mouseX, mouseY, 100, 0, Math.PI * 2, true);
   ctx.fillStyle = "orange";
   ctx.fill();
+  ctx.stroke();
   ctx.closePath();
 }
 
