@@ -1,4 +1,4 @@
-var c = document.getElementById("slate"); // GET CANVAS
+var c = document.getElementById("playground"); // GET CANVAS
 var dotButton = document.getElementById('buttonCircle');
 var stopButton = document.getElementById('buttonStop')
 
@@ -9,7 +9,7 @@ ctx.fillStyle = "orange";
 var requestID;
 
 var clear = () => {
-  ctx.clearRect(0,0, 10000, 10000);
+  ctx.clearRect(0,0, 1000, 1000);
 };
 
 var radius = 0;
@@ -17,20 +17,19 @@ var growing = true;
 
 var drawCircle = (e, r) => {
   var circ = c.getBoundingClientRect();
-  console.log("mouseclick registered at ", mouseX, mouseY);
   ctx.beginPath();
-  ctx.arc(500, 500, r, 0, Math.PI * 2, true);
-  ctx.fillStyle = "orange";
+  ctx.arc(250, 250, r, 0, Math.PI * 2, true);
+  ctx.fillStyle = "blue";
   ctx.fill();
   ctx.stroke();
   ctx.closePath();
 }
 
 var drawDot = (e) => {
-  while (growing){
+  while (growing && radius < 100){
     clear();
-    drawCircle(e, radius)
-    radius++
+    radius+= 1;
+    drawCircle(e, radius);
   }
 };
 
