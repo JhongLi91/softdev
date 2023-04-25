@@ -23,16 +23,16 @@ var drawRect = function(e) {
     var mouseX = e.x - rect.left; //gets X-coor of mouse when event is fired
     var mouseY = e.y - rect.top; //gets Y-coor of mouse when event is fired
     console.log("mouseclick registered at ", mouseX, mouseY);
-    ctx.fillRect(mouseX, mouseY, 20, 21);
+    ctx.fillRect(mouseX, mouseY, 100, 150);
 }
 
-var drawCricle = (e) => {
+var drawCircle = (e) => {
   var circ = c.getBoundingClientRect();
-  var mouseX = e.clientX - rect.left;//gets X-coor of mouse when event is fired
-  var mouseY = e.clientY - left.top;//gets Y-coor of mouse when event is fired
+  var mouseX = e.x - circ.left;//gets X-coor of mouse when event is fired
+  var mouseY = e.y - circ.top;//gets Y-coor of mouse when event is fired
   console.log("mouseclick registered at ", mouseX, mouseY);
   ctx.beginPath();
-  ctx.arc(mouseX, mouseY, 50, 0, MATH.PI * 2, true);
+  ctx.arc(mouseX, mouseY, 100, 0, Math.PI * 2, true);
   ctx.fillStyle = "orange";
   ctx.fill();
   ctx.closePath();
