@@ -4,7 +4,7 @@ var stopButton = document.getElementById('buttonStop')
 
 var ctx = c.getContext("2d");
 
-ctx.fillStyle = "orange";
+ctx.fillStyle = "blue";
 
 var requestID;
 
@@ -26,17 +26,21 @@ var drawCircle = (e, r) => {
 }
 
 var drawDot = (e) => {
-  while (growing && radius < 100){
+  if (growing && radius < 250){
     clear();
-    radius+= 1;
     drawCircle(e, radius);
+    radius+= 1;
+
+    window.requestAnimationFrame(requestID);
+    requestID = window.requestAnimationFrame(drawDot)
   }
+
 };
 
 var stopIt = (e) => {
   console.log("stopIt invoked...");
   console.log(requestID);
-
+  window.requestAnimationFrame(drawDot)
 };
 
 dotButton.addEventListener( "click", drawDot);
