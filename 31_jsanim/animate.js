@@ -15,32 +15,37 @@ var clear = () => {
 var radius = 0;
 var growing = true;
 
-var drawCircle = (e, r) => {
-  var circ = c.getBoundingClientRect();
+
+var drawDot = () => {
+  window.cancelAnimationFrame(requestID);
+
+  clear();
   ctx.beginPath();
-  ctx.arc(250, 250, r, 0, Math.PI * 2, true);
-  ctx.fillStyle = "blue";
+  ctx.arc(250, 250, radius, 0, 2 * Math.PI);
   ctx.fill();
   ctx.stroke();
-  ctx.closePath();
-}
 
-var drawDot = (e) => {
-  if (growing && radius < 250){
-    clear();
-    drawCircle(e, radius);
-    radius+= 1;
-
-    window.requestAnimationFrame(requestID);
-    requestID = window.requestAnimationFrame(drawDot)
+  if (growing) {
+    radius++;
+  }
+  if (!growing) {
+    radius--;
+  }
+  if (radius == 250) {
+    growing = false;
+  }
+  if (radius == 0) {
+    growing = true;
   }
 
+  requestID = window.requestAnimationFrame(drawDot);
 };
+
 
 var stopIt = (e) => {
   console.log("stopIt invoked...");
   console.log(requestID);
-  window.requestAnimationFrame(drawDot)
+  window.cancelAnimationFrame(requestID)
 };
 
 dotButton.addEventListener( "click", drawDot);
