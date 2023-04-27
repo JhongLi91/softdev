@@ -2,7 +2,6 @@
      SoftDev pd8
      K33 --
      2023-04-27
-     HTML file for JavaScript canvas work
 -->
 
   events1
