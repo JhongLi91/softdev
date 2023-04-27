@@ -1,0 +1,18 @@
+<!-- Team JHE :: Jian Hong, Eric
+     SoftDev pd8
+     K33 --
+     2023-04-27
+     HTML file for JavaScript canvas work
+-->
+
+  events1
+    - When clicking the words a message comes up from inside <td> tag
+
+  events2
+    - Clicking on <td> gives <td> + <tr> + <table>
+    - Clicking on <table> only gives <table>
+
+  events3
+    - Similar to events3 but in different order
+    - When true <table> , <td> , <tr>
+    - When false <td> , <tr> , <table>
